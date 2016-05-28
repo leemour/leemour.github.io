@@ -19,8 +19,21 @@ github_username:   leemour
 linkedin_username: leemour
 author: Viacheslav Ptsarev
 
+menu_links:
+  - title: Services
+    slug: services
+  - title: Portfolio
+    slug: portfolio
+  - title: About
+    slug: about
+  - title: Team
+    slug: team
+  - title: Contact
+    slug: contact
+
 # Build settings
 markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+

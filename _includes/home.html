@@ -1,0 +1,67 @@
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">
+        Web development with
+      </div>
+      <div class="intro-heading">
+        Ruby on Rails
+      </div><a class="page-scroll btn btn-xl" href="#services">Tell Me
+      More</a>
+    </div>
+  </div>
+</header>
+
+{% include home/services.html %}
+
+{% include home/portfolio.html %}
+
+{% include home/about.html %}
+
+{% include home/team.html %}
+
+{% include home/clients.html %}
+
+{% include home/contact.html %}
+
+<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7WVKx4w3lkYR_46Eqz9nx20&key=AIzaSyD51pNzuULHOOdvIyBzztejNhbA3OAvbZw" allowfullscreen></iframe>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; {{ site.author }} {{
+        site.time | date: '%Y' }}</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li>
+            <a href=
+            "https://twitter.com/{{%20site.twitter_username%20}}"><i class=
+            "fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=
+            "https://github.com/{{%20site.github_username%20}}"><i class=
+            "fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href=
+            "https://linkedin.com/in/{{%20site.linkedin_username%20}}"><i class="fa fa-linkedin">
+            </i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

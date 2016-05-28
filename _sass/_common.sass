@@ -1,0 +1,109 @@
+$base-color: #00a0b3 !default
+$base-color-transparent: rgba(0, 160, 179, 0.7) !default
+$base-darker-color: #007583 !default
+
+$base-font: 'Lato', sans-serif
+$menu-font: $base-font
+// $menu-font: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif
+
+
+
+//==================== COMMON
+body
+  font-family: $base-font
+
+h1, h2, h3, h4, h5, h6
+  font-family: $base-font
+  font-weight: 900
+
+
+//==================== NAVIGATION
+.navbar-default
+  padding: 15px 0 17px
+#menu-main
+  background-color: rgba(30, 30, 30, 0.5)
+  &.navbar-shrink
+    background-color: rgba(30, 30, 30, 0.8)
+    padding: 10px 0 12px
+  .navbar-collapse
+    border: 0 none
+    box-shadow: none
+  .navbar-toggle
+    background-color: rgba(30, 30, 30, 0.5)
+    border-color: #ddd
+    &:hover
+      background-color: $base-darker-color
+      border-color: $base-darker-color
+    .icon-bar
+      background-color: #ddd
+  .navbar-brand
+    padding: 5px
+    height: auto
+    img
+      width: 80px
+  li
+    a
+      padding: 8px 15px
+      border-radius: 2px
+      font-family: $menu-font
+      font-weight: 700
+      transition: 200ms
+      transition-timing-function
+      letter-spacing: 1.4px
+    &.active a
+      background-color: $base-color-transparent
+    &.active:hover a
+      color: #fff
+      background-color: $base-darker-color
+    &:hover a
+      color: $base-color
+
+//==================== HEADER
+header
+  .intro-text
+    padding: 200px 0 170px
+    .intro-lead-in
+      margin-bottom: 15px
+      font-family: $base-font
+    .intro-heading
+      margin-bottom: 35px
+      font-family: $base-font
+      font-weight: 900
+    a
+      padding: 10px 60px
+      background-color: $base-color-transparent
+      border: 0 none
+      &:hover
+        background-color: $base-darker-color
+
+@media (max-width: $screen-xs-max)
+  #menu-main
+    background-color: rgba(30, 30, 30, 0.6)
+    &.navbar-shrink
+      padding: 0
+    .navbar-brand
+      padding: 15px
+
+//==================== GRID
+section
+  padding: 70px 0
+  h2.section-heading
+    font-size: 2.3em
+    margin-bottom: 10px
+  h3.section-subheading
+    margin: 0 0 50px
+  .grid-item
+    min-height: 250px
+    h4
+      font-weight: 600
+    img
+      width: 70px
+    p
+      font-size: 1.05em
+      max-width: 400px
+      margin: 0 auto 10px
+
+//==================== MISC
+#google-map
+  width: 100%
+  height: 400px
