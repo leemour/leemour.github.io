@@ -88,7 +88,7 @@ portfolio_items:
   - id: 2
     title: Burobiz CRM/CMS
     file: 'crm1'
-    category: Architecture design &amp; development
+    category: Architecture &amp; development
     date: January 2015 - November 2017
     link: 
     client: Business Bureau
@@ -159,7 +159,7 @@ portfolio_items:
   - id: 6
     title: Underflow - Q&amp;A service
     file: under1
-    category: Architecture design &amp; development
+    category: Architecture &amp; development
     date: January 2016 - November 2017
     link: 
     client: Private person
