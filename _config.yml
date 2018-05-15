@@ -189,4 +189,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-
+exclude: ['themes', 'Gemfile', 'Gemfile.lock', 'README.md']
+minify_html: true
+plugins:
+  - octopress-minify-html
