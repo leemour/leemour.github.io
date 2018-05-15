@@ -1,92 +1,67 @@
-<section id="about">
+<section id="about" class="about-section section-padding">
   <div class="container">
+    <h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">About Me</h2>
+
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">About</h2>
-        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet
-        consectetur.</h3>
+
+      <div class="col-sm-6 col-sm-push-6 col-md-4 col-md-push-8">
+        <div class="biography">
+          <div class="myphoto">
+            <img src="/img/avatar.jpg" alt="">
+          </div>
+          <ul>
+            <li><strong>Name:</strong> {{ site.author }}</li>
+            <li><strong>Date of birth:</strong> 01 Aug 1986</li>
+            <li><strong>Location:</strong> St-Petersburg, Russia (+3 UTC)</li>
+            <li><strong>Languages:</strong> English (fluent), French (intermediate), Russian (native)</li>
+            <li><strong>Skype:</strong> <a href="skype:{{ site.skype }}?chat">{{ site.skype }}</a></li>
+            <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          </ul>
+        </div>
+      </div> <!-- col-md-4 -->
+
+      <div class="col-sm-6 col-sm-pull-6 col-md-8 col-md-pull-4">
+        <div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <h3>Interests</h3>
+          <p>
+            I love planning, designing and crafting quality web apps, analyzing business objectives of my clients/employers and achieving real results for them. I'm presently expanding my solid experience in architecture design and learning new technologies (like Elixir lang).
+          </p>
+          <p>
+            I seek an opportunity to evolve as a professional, working in a passionate team, developing sophisticated products that appeal to users and make a difference in this world. I seek highest work standards, rich code culture, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm particularly interested in the fields of e-commerce and education.
+          </p>
+        </div>
+
+        <div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <h3>What Do I Do ?</h3>
+          <p>I've been working in web development since 2009. I've developed many web apps: CRMs, E-shops, CMSs, Web scrapers and much more. Built multiple APIs from scratch and integrated with many 3rd-party APIs like Google, Stripe, Yandex, Facebook, Twitter etc. 
+          </p>
+          <p>
+            I'm a code quality maniac and I love to work hard to not just get tasks done quickly, but achieve modular maintanable application architecture with emphasis on code readability. I have a passion for teaching and usually there's someone that I'm mentoring to become a better developer
+.          </p>
+          <p>
+            My common tasks:
+          </p>
+          <ul class="list-check">
+            <li>Web app development</li>
+            <li>API development</li>
+            <li>Development of Ruby gems</li>
+            <li>Database query optimization</li>
+            <li>Mentoring, Code review</li>
+            <li>Open-source contribution</li>
+          </ul>
+        </div>
+
+        <!-- <div class="my-signature">
+          <img src="/img/sign.png" alt="">
+        </div> -->
+
+        <div class="download-button">
+          <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Message me</a>
+          <a class="btn btn-primary btn-lg" href="{{ site.cv_path }}"><i class="fa fa-download"></i>Download my CV</a>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image"><img alt="" class=
-            "img-circle img-responsive" src="/img/about/1.jpg"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Our Humble Beginnings</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-                reiciendis temporibus qui quibusdam, recusandae sit vero
-                unde, sed, incidunt et ea quo dolore laudantium
-                consectetur!</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img alt="" class=
-            "img-circle img-responsive" src="/img/about/2.jpg"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">An Agency is Born</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-                reiciendis temporibus qui quibusdam, recusandae sit vero
-                unde, sed, incidunt et ea quo dolore laudantium
-                consectetur!</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image"><img alt="" class=
-            "img-circle img-responsive" src="/img/about/3.jpg"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>December 2012</h4>
-                <h4 class="subheading">Transition to Full Service</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-                reiciendis temporibus qui quibusdam, recusandae sit vero
-                unde, sed, incidunt et ea quo dolore laudantium
-                consectetur!</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img alt="" class=
-            "img-circle img-responsive" src="/img/about/4.jpg"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>July 2014</h4>
-                <h4 class="subheading">Phase Two Expansion</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Sunt ut voluptatum eius sapiente, totam
-                reiciendis temporibus qui quibusdam, recusandae sit vero
-                unde, sed, incidunt et ea quo dolore laudantium
-                consectetur!</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>Be Part<br>
-              Of Our<br>
-              Story!</h4>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
+
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
 </section>

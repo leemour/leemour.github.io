@@ -6,30 +6,183 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Riabit - web development
+title: Riabit - Ruby on Rails web development
 email: leemour@gmail.com
+skype: leemour
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is Viacheslav Ptsarev and I'm a full-stack Ruby on Rails developer.
+  I live in St-Petersburg Russia.
 baseurl: "" # the subpath of your site, e.g. /blog
+cv_path: "/V.Ptsarev.CV.EN.pdf"
 url: "http://riabit.ru" # the base hostname & protocol for your site
-twitter_username:  leemour
 github_username:   leemour
+twitter_username:  leemour
 linkedin_username: leemour
+facebook_username: leemour
 author: Viacheslav Ptsarev
 
 menu_links:
+  - title: About
+    slug: about
   - title: Services
     slug: services
   - title: Portfolio
     slug: portfolio
-  - title: About
-    slug: about
-  - title: Team
-    slug: team
+  # - title: History
+  #   slug: history
   - title: Contact
     slug: contact
+
+technologies:
+  - icon: ruby
+    name: Ruby
+  - icon: rails
+    name: Ruby on Rails
+  - icon: js
+    name: JavaScript
+  - icon: coffeescript
+    name: CoffeeScript
+  # - icon: react
+    # name: React
+  - icon: bootstrap
+    name: Bootstrap 3/4
+  - icon: css3
+    name: CSS3
+  - icon: html5
+    name: HTML5
+  - icon: capistrano
+    name: Capistrano
+  - icon: rspec
+    name: RSpec
+  - icon: cucumber
+    name: Cucumber
+  - icon: postgres
+    name: PostgreSQL
+  - icon: sass
+    name: SASS
+
+portfolio_items:
+  - id: 1
+    title: Bookinza - Online Store
+    file: book1
+    category: Spree Commerce development
+    date: January 2018 - present
+    link: http://bookinza.ru
+    client: Bookinza ltd.
+    intro: Children books &amp; educational toys
+    description: "<p>
+  Development of an online store for the Russian market. 
+  Integration of website design. Etension of default functionality:
+</p>
+<ul>
+  <li>Product recommendations</li>
+  <li>CMS, Blog</li>
+  <li>Wishlist</li>
+  <li>Product pickup</li>
+  <li>Cash on delivery</li>
+  <li>SEO optimization</li>
+  <li>OAuth, personal account</li>
+  <li>and more...</li>
+</ul>
+</p>Using Rails 5.1, Spree 3.4, PostgreSQL 10 etc<p>"
+  - id: 2
+    title: Burobiz CRM/CMS
+    file: 'crm1'
+    category: Architecture design &amp; development
+    date: January 2015 - November 2017
+    link: 
+    client: Business Bureau
+    intro: Business process automation
+    description: "<p>
+  Development of internal CRM/CMS for the 2-nd largest business brokerage company in Russia.
+</p>
+<p>
+  Management of a team of developers and working closely with business owners. Project management.
+</p>
+<p>
+  Business process automation:
+</p>
+<ul>
+  <li>Design and development of CRM</li>
+  <li>Design and development of CMS</li>
+  <li>Design and development of HRM</li>
+  <li>Product listing management</li>
+  <li>Automatic business listing across all Russian classifieds</li>
+  <li>Automatic scaping of business ads across all Russian classifieds with indentification of doubles and updates</li>
+  <li>Development of private API</li>
+  <li>Integration with 3rd-pary APIs: Google, Yandex, VK</li>
+  <li>and more...</li>
+</ul>
+</p>Using Rails 5.1, PostgreSQL 9.5 etc<p>"
+  - id: 3
+    title: Burobiz Storefront
+    file: bu3
+    category: Full-stack development
+    date: January 2015 - November 2017
+    link: https://burobiz.ru
+    client: Business Bureau
+    intro: Storefront/catalog
+    description: "<p>
+  Development of storefront/catalog of businesses for sale for the 2-nd largest business brokerage company in Russia.
+</p>
+<p>
+  Management of a team of developers and working closely with business owners. Project management.
+</p>
+</p>Using Rails 5.1, PostgreSQL 9.5 etc<p>"
+  - id: 4
+    title: Simpllo - Logistics Provider
+    file: simp1
+    category: Full-stack development
+    date: December 2017
+    link: http://www.simpllo.ru
+    client: Simpllo ltd.
+    intro: Logistics portal
+    description: "<p>
+  Development of website for a transportation company.
+</p>
+</p>Using Rails 5.1, PostgreSQL 9.5 etc<p>"
+  - id: 5
+    title: Experto - Education Service
+    file: exp1
+    category: Back-end development
+    date: May 2017
+    link: https://www.producthunt.com/posts/experto
+    client: Experto ltd.
+    intro: Self-education platform
+    description: "<p>
+  Development of educational service where users learn by following experts.
+</p>
+<p>
+  Scraping the web and media channels and building feeds with activities and contents tied to particular experts. Presenting smart feeds and enabling smart search.
+</p>
+</p>Using Rails 5.1, PostgreSQL 9.5 etc<p>"
+  - id: 6
+    title: Underflow - Q&amp;A service
+    file: under1
+    category: Architecture design &amp; development
+    date: January 2016 - November 2017
+    link: 
+    client: Private person
+    intro: Questions and answers for developers
+    description: "<p>
+  Development of StackOverflow clone.
+</p>
+<ul>
+  <li>Asking and answering questions</li>
+  <li>Question and answer rating</li>
+  <li>OAuth, public API</li>
+  <li>Bounties, user rating</li>
+  <li>And more...</li>
+</ul>
+</p>Using Rails 5.1, PostgreSQL 9.5 etc<p>"
+  # - id: 6
+  #   title: Michaelangelo - Web poster &amp; scraper
+  #   file: pa2
+  #   category: Design &amp; development
+  #   date: January 2016 - November 2017
+  #   client: Business Bureau
+  #   intro: 
+
 
 # Build settings
 markdown: kramdown

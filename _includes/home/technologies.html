@@ -1,0 +1,20 @@
+<aside class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Technologies</h2>
+        <h3 class="section-subheading text-muted">Something I use on daily basis</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for tech in site.technologies %}
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 technology technology-{{ tech.name }}">
+          <img alt="{{ tech.name }}" class="img-responsive img-centered" src="/img/technologies/{{ tech.icon }}.svg">
+          <div class="tech-name">
+            {{ tech.name }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</aside>

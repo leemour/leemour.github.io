@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .text-muted {
   color: #777
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700
 }
@@ -54,7 +54,7 @@ h6 {
   color: #fff;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700
 }
@@ -98,7 +98,7 @@ fieldset[disabled] .btn-primary.active {
   color: #fff;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -170,7 +170,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #fed136
 }
 .navbar-default .nav li a {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -246,7 +246,7 @@ header .intro-text .intro-lead-in {
   margin-bottom: 25px
 }
 header .intro-text .intro-heading {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
@@ -266,7 +266,7 @@ header .intro-text .intro-heading {
     margin-bottom: 25px
   }
   header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 75px;
@@ -552,7 +552,6 @@ aside.clients img {
 }
 section#contact {
   background-color: #222;
-  background-image: url(/img/map-image.png);
   background-position: center;
   background-repeat: no-repeat
 }
@@ -577,25 +576,25 @@ section#contact .form-control:focus {
   box-shadow: none
 }
 section#contact::-webkit-input-placeholder {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbb
 }
 section#contact:-moz-placeholder {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbb
 }
 section#contact::-moz-placeholder {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbb
 }
 section#contact:-ms-input-placeholder {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #bbb
@@ -609,14 +608,14 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none
 }

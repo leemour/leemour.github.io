@@ -1,11 +1,17 @@
 $base-color: #00a0b3 !default
 $base-color-transparent: rgba(0, 160, 179, 0.7) !default
 $base-darker-color: #007583 !default
+$base-darker-color-transparent: rgba(0, 117, 131, 0.7) !default
+$second-color: #91e0bc
+$second-darker-color: #68c3a3
+$dark-color: #1a1e23
+$alert-color: #b10000
+$alert-text-color: #e74c3c
+$base-text-color: #111
 
 $base-font: 'Lato', sans-serif
 $menu-font: $base-font
 // $menu-font: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif
-
 
 
 //==================== COMMON
@@ -16,6 +22,27 @@ h1, h2, h3, h4, h5, h6
   font-family: $base-font
   font-weight: 900
 
+a
+  color: $second-color
+  &:hover
+    color: $second-darker-color
+  &:active
+    color: $second-darker-color
+  &:visited
+    color: $second-color
+
+body
+  .btn-xl
+    padding: 10px 60px
+    background-color: $base-color-transparent
+    border: 0 none
+    transition: all 300ms
+    &:hover
+      background-color: $base-darker-color-transparent
+    &:active
+      background-color: $base-darker-color-transparent
+    &:visited
+      background-color: $base-darker-color-transparent
 
 //==================== NAVIGATION
 .navbar-default
@@ -47,7 +74,7 @@ h1, h2, h3, h4, h5, h6
       border-radius: 2px
       font-family: $menu-font
       font-weight: 700
-      transition: 200ms
+      transition: 300ms
       transition-timing-function
       letter-spacing: 1.4px
     &.active a
@@ -57,32 +84,188 @@ h1, h2, h3, h4, h5, h6
       background-color: $base-darker-color
     &:hover a
       color: $base-color
+    &:active a
+      background-color: $base-darker-color
 
 //==================== HEADER
 header
   .intro-text
     padding: 200px 0 170px
     .intro-lead-in
-      margin-bottom: 15px
+      font-size: 1.4em
       font-family: $base-font
+      font-style: normal
+      font-weight: 800
+      text-transform: uppercase
+      line-height: 1.5
+      opacity: 0.7
+      margin-bottom: 0
+      .inner-text
+        font-size: 1.1em
+        font-weight: 300
+        text-transform: none
     .intro-heading
+      color: $second-color
       margin-bottom: 35px
       font-family: $base-font
       font-weight: 900
+      opacity: 0.7
     a
       padding: 10px 60px
       background-color: $base-color-transparent
       border: 0 none
+      transition: all 300ms
       &:hover
-        background-color: $base-darker-color
+        background-color: $base-darker-color-transparent
+      &:active
+        background-color: $base-darker-color-transparent
 
-@media (max-width: $screen-xs-max)
-  #menu-main
-    background-color: rgba(30, 30, 30, 0.6)
-    &.navbar-shrink
-      padding: 0
-    .navbar-brand
-      padding: 15px
+
+.social-icons
+  margin: 50px 0 30px
+  opacity: 0.7
+  .list-inline
+    padding-left: 0
+    margin-left: -5px
+    list-style: none
+    li
+      display: inline-block
+      padding-right: 5px
+      padding-left: 5px
+      a
+        background: transparent
+        padding: 0
+        i
+          position: relative
+          color: #fff
+          font-size: 18px
+          margin: 0 7px
+          line-height: 30px
+          text-align: center
+          width: 30px
+          height: 30px
+          &::before
+            position: relative
+            z-index: 1
+          &::after
+            position: absolute
+            content: ""
+            left: 0
+            top: 0
+            width: 30px
+            height: 30px
+            border: 1px solid #fff
+            border-radius: 3px
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+            -webkit-transition: all 300ms
+            -moz-transition: all 300ms
+            -o-transition: all 300ms
+            transition: all 300ms
+          &:hover::after
+            background: $second-darker-color
+            border: 1px solid transparent
+            z-index: 0
+
+//==================== ABOUT
+
+.short-info 
+  margin-bottom: 40px
+  h3 
+    margin-bottom: 30px
+  ul 
+    margin-top: 10px
+    display: inline-block
+    li 
+      width: 50%
+      float: left
+
+.my-signature
+  margin-bottom: 45px
+  img
+    width: inherit
+
+.download-button 
+  a 
+    margin-right: 20px
+    color: #fff
+    i 
+      margin-right: 10px
+  .btn-primary
+    text-transform: none
+
+.biography
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  border: 1px solid #EEEEEE
+  position: relative
+  &:after
+    content: ""
+    border-bottom: 1px solid #EEEEEE
+    position: absolute
+    bottom: -3px
+    width: 100%
+    border-radius: 10px
+    height: 20px
+  strong
+    display: inline-block
+    min-width: 100px
+  ul
+    padding: 25px 20px 10px
+    li
+      padding: 5px 0
+      font-size: 16px
+      border-bottom: 1px solid #EEEEEE
+      &:last-child
+        border-bottom: 0 none
+
+.myphoto
+  position: relative
+  background: url('/img/photo-frame.png') bottom center no-repeat
+  background-size: contain
+  img
+    position: relative
+    z-index: -1
+
+//==================== LISTS
+
+ul, ol
+  margin: 0
+  padding: 0
+  list-style: none
+
+ul.list-check li
+  position: relative
+  font-size: 18px
+  line-height: 32px
+  &::before
+    content: "\f00c"
+    font-family: fontawesome
+    color: #68c3a3
+    margin-right: 10px
+
+//==================== SECTION TITLE
+
+.section-title
+  margin-bottom: 80px
+  text-align: center
+  font-size: 50px
+  line-height: 50px
+  color: #2c3e50
+  position: relative
+  &::after
+    content: ""
+    background: url('/img/section-divider.png') no-repeat 0 0
+    height: 15px
+    width: 113px
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -40px
+    margin: 0 auto
 
 //==================== GRID
 section
@@ -103,7 +286,111 @@ section
       max-width: 400px
       margin: 0 auto 10px
 
+//==================== TECHNOLOGIES
+aside.clients
+  .row
+    margin: 0 0 30px
+  h3.section-subheading
+    font-size: 16px
+    text-transform: none
+    font-style: italic
+    font-weight: 400
+  .technology
+    height: 140px
+    img
+      height: 50px
+      width: 50px
+      margin: 30px auto
+    .tech-name
+      text-align: center
+
+
+//==================== FOOTER
+footer
+  background-color: $dark-color
+  color: #fff
+  text-align: left
+  .social-icons
+    margin: 10px 0 20px
+    text-align: center
+  .copyright
+    color: #fff
+
+
+//==================== MODAL
+.portfolio-modal
+  .modal-description
+    font-size: 15px
+    text-align: left
+    max-width: 690px
+    margin: 0 auto
+    p
+      font-size: 15px
+      line-height: 1.5
+      margin-bottom: 20px
+    ul
+      list-style: inside disc
+
+
+
+//==================== FORM
+section#contact
+  background-color: #eee
+  h2.section-heading
+    color: $base-text-color
+  .form-group
+    margin-bottom: 30px
+    .form-control
+      height: 45px !important
+      border: 1px solid #e8e8e8
+      border-radius: 0
+      box-shadow: none
+      padding: 6px 12px
+      transition: all 300ms !important
+      &:focus
+        border-color: #68c3a3
+        box-shadow: none
+    textarea.form-control
+      height: 245px !important
+    &.error
+      margin-bottom: 0
+      .form-control
+        border-color: $alert-text-color
+      p
+        margin: 0 0 5px
+      ul
+        margin-bottom: 0
+
+  .required
+    color: $alert-color
+  .help-block
+    ul
+      list-style: none inside
+      margin-left: 0
+
+
 //==================== MISC
 #google-map
   width: 100%
   height: 400px
+
+
+//==================== MEDIA
+@media (min-width: 450px) and (max-width: $screen-xs-max)
+  .myphoto
+    width: 70%
+    margin: 0 auto
+
+@media (max-width: $screen-xs-max)
+  #menu-main
+    background-color: rgba(30, 30, 30, 0.6)
+    &.navbar-shrink
+      padding: 0
+    .navbar-brand
+      padding: 15px
+
+@media (max-width: $screen-sm-max)
+  footer
+    .social-icons
+      text-align: left
+      margin: 20px 0
